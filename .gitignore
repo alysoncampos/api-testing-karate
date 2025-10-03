@@ -1,0 +1,39 @@
+# Maven
+/target/
+!.mvn/wrapper/maven-wrapper.jar
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# IntelliJ IDEA
+*.iml
+.idea/
+
+# VS Code
+.vscode/
+
+# Karate reports
+karate-reports*/
+karate.log
+
+# Logs
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Test output
+surefire-reports/
+
+# Java build
+*.class
+
+# Karate config
+karate-config.js
+
+# Misc
+*.swp
+*.swo
