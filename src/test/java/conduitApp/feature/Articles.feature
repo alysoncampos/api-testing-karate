@@ -14,7 +14,6 @@ Feature: Articles
         Then status 201
         And match response.article.title == 'Bla bla Aly'
     
-    @debug
     Scenario: Create and delete article
         # Given header Authorization = 'Token ' + token
         Given path 'articles'
