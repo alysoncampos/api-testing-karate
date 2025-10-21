@@ -1,6 +1,7 @@
 package helpers;
 
 import com.github.javafaker.Faker;
+import net.minidev.json.JSONObject;
 
 public class DataGenerator {
 
@@ -12,6 +13,15 @@ public class DataGenerator {
 
     public static String getRandomUsername() {
         return faker.name().username();
+    }
+
+    public static JSONObject getRandomArticle() {
+        JSONObject article = new JSONObject();
+        article.put("title", faker.gameOfThrones().character());
+        article.put("description", faker.gameOfThrones().city());
+        article.put("body", faker.gameOfThrones().dragon());
+
+        return article;
     }
     
 }
